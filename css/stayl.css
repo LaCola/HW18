@@ -1,0 +1,91 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+.container{
+   margin-left: 50px;
+}
+.triangle{
+   width: 0;
+   height: 0;
+   border-bottom: 200px solid rgb(67, 8, 75);
+   border-right: 100px solid transparent;
+   border-left: 100px solid transparent;
+   margin-bottom: 40px;
+   transition: transform 0.8s linear, border-bottom 1.4s linear;
+}
+.triangle:hover{
+transform: rotate(90deg);
+border-bottom: 200px solid rgb(51, 224, 16);
+}
+
+               /* text-shadow */
+.text-shadow p{
+   font-size: 40px;
+   margin-bottom: 40px;
+}
+.text-shadow p:nth-child(1){
+   text-shadow: 20px 19px 0px rgba(0, 0, 0, 0.5);
+   
+}
+.text-shadow p:nth-child(2){
+   text-shadow: 20px 19px 4px rgba(0, 0, 0, 0.5);
+}
+.text-shadow p:nth-child(3){
+   text-shadow: -8px -8px 4px rgb(16 13 187), 9px 12px 4px rgb(209 14 14); 
+}
+.text-shadow p:nth-child(4){
+   background-color: #967508;
+   color: transparent;
+   text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+   -webkit-background-clip: text;
+      -moz-background-clip: text;
+           background-clip: text;
+}
+.text-shadow p:nth-child(5){
+   color: #d9d9d9;
+   background: #e8e8e8;
+   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+.text-shadow p:nth-child(6){
+color: rgb(235, 174, 83);
+text-shadow: 0px 0px 2px black;
+}
+                     /* box-shadow */
+.box-shadow div{
+width: 200px;
+height: 200px;
+border: 1px solid black;
+margin-bottom: 40px;
+}
+.box-shadow div:nth-child(1){
+   box-shadow: 20px 17px 0px 0px rgba(0, 0, 0, 0.5);
+}
+.box-shadow div:nth-child(2){
+   box-shadow: 20px 17px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.box-shadow div:nth-child(3){
+   box-shadow: inset 4px 4px 4px blue, inset -4px -4px 4px red;
+}
+                   /* Градієнт */
+.gradient div{
+width: 300px;
+height: 150px;
+border: 1px solid black;
+margin-bottom: 40px;
+}
+.gradient div:nth-child(1){
+   background: linear-gradient(to right, red, rgb(161, 40, 135),  blue, rgb(119, 141, 202), rgb(255, 254, 254), red);
+}
+.gradient div:nth-child(2){
+   background: linear-gradient(to bottom, #f80303 35%, #fffffe 35%, #fffffe 65%, #fc0404 65%);
+}
+.gradient div:nth-child(3){
+   background: radial-gradient(circle, rgb(212, 223, 231), rgb(21, 138, 192) 40%);
+}
+.gradient div:nth-child(4){
+   background: radial-gradient(circle at 20px 20px, rgb(255, 255, 255), rgb(21, 138, 192) 10%);
+}
+.gradient div:nth-child(5){
+   background: radial-gradient(circle, black,  rgb(255, 255, 255), rgb(6, 102, 11) 25%);
+}
